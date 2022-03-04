@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AdminFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardElevation="@dimen/cardElevation"
+                android:layout_margin="@dimen/defaultLayoutMargin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#EBFCFF">
+
+                        <TextView
+                            android:id="@+id/textPerfil"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="155dp"
+                            android:layout_marginLeft="155dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Perfil"
+                            android:textAlignment="center"
+                            android:textColor="#0AA8C2"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heigthImageProduct"
+                        android:src="@drawable/imagen_perfil"
+                        android:layout_margin="40dp"/>
+
+                    <TextView
+                        android:id="@+id/tvNameAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Juan Restrepo"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="@dimen/textSizeAdmin"
+                        android:textColor="#000000"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/defaultLayoutMargin"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvAddressAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Carrera 45 # 67 - 50"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:textColor="#8A8A8A"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/defaultLayoutMargin"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvPhoneAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/defaultLayoutMargin"
+                        android:gravity="center_horizontal"
+                        android:text="350 4568545"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:textColor="#8A8A8A"/>
+
+                    <TextView
+                        android:id="@+id/tvMailAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="juanp@gmail.com"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:textColor="#8A8A8A"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="40dp"
+                        />
+
+                    <Button
+                        android:id="@+id/botonActualizarperfil"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:backgroundTint="#0AA8C2"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Actualizar"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp"
+                        app:cornerRadius="10dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
